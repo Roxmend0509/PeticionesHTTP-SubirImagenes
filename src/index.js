@@ -1,6 +1,11 @@
-import { saludar } from './js/components'
-import './style.css'
+const jokeUrl="https://api.chucknorris.io/jokes/random";
 
-const nombre='Roxana';
+// fetch(jokeUrl).then(resp => {
+//     resp.json().then(data=>{
+//         console.log(data)
+//         console.log(data.id)
+//         console.log(data.value)
+//     })
+// });
 
-saludar(nombre);
+fetch(jokeUrl).then(resp=>resp.json()).then(console.log)
