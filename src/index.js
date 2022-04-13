@@ -1,5 +1,6 @@
 import regeneratorRuntime from "regenerator-runtime";
-import * as CRUD from "./js/crud-provider";
+import { init } from "./js/archivos_page";
+// import * as CRUD from "./js/crud-provider";
 // import { obtenerUsers } from "./js/http-provider";
 //import { init } from "./js/chistes-page";
 // import { init } from "./js/usuarios-page";
@@ -20,4 +21,6 @@ import * as CRUD from "./js/crud-provider";
 //     job:'Capintero'
 // }).then(console.log)
 
-CRUD.deleteUsuario(1).then(console.log)
+// CRUD.deleteUsuario(1).then(console.log)
+
+init();
