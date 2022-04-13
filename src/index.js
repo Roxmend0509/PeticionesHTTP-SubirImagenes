@@ -1,11 +1,8 @@
-const jokeUrl="https://api.chucknorris.io/jokes/random";
+import regeneratorRuntime from "regenerator-runtime";
+import { obtenerUsers } from "./js/http-provider";
+//import { init } from "./js/chistes-page";
+import { init } from "./js/usuarios-page";
 
-// fetch(jokeUrl).then(resp => {
-//     resp.json().then(data=>{
-//         console.log(data)
-//         console.log(data.id)
-//         console.log(data.value)
-//     })
-// });
+init();
 
-fetch(jokeUrl).then(resp=>resp.json()).then(console.log)
+//obtenerUsers().then(console.log)
